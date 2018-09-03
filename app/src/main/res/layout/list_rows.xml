@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/id"
+        android:text="id"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gambar"
+            android:layout_gravity="center"
+            android:layout_width="105dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:src="@drawable/marker_menu"
+            android:layout_height="105dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-15dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:text="Nama"/>
+            <TextView
+                android:id="@+id/alamat"
+                android:text="Alamat"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/rt_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:numStars="5"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:isIndicator="true"
+                android:transformPivotX="0dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate : 4.5"
+                android:layout_marginTop="-28dp"
+                android:id="@+id/textRating"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

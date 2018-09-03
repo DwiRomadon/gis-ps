@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:textStyle="bold"
+                android:layout_gravity="right"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:id="@+id/rt_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:numStars="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="Rate"
+                        android:textColor="#F1C40F"
+                        android:id="@+id/btnRating"
+                        android:layout_marginLeft="-98dp"
+                        android:background="@drawable/btn_rounded_white"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate : 2.5"
+                    android:textColor="#F1C40F"
+                    android:id="@+id/tvRatting"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Studio Foto :"
+                android:textColor="#F1C40F"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:editable="false"
+                android:enabled="false"
+                android:textColor="#F1C40F"
+                android:backgroundTint="#F1C40F"
+                android:id="@+id/nama"/>
+
+            <TextView
+                android:text="Alamat :"
+                android:textStyle="bold"
+                android:textColor="#F1C40F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:editable="false"
+                android:enabled="false"
+                android:textColor="#F1C40F"
+                android:backgroundTint="#F1C40F"
+                android:id="@+id/alamat"/>
+
+            <TextView
+                android:text="No Telphone :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:editable="false"
+                android:focusable="false"
+                android:textColor="#F1C40F"
+                android:backgroundTint="#F1C40F"
+                android:id="@+id/no_telp"/>
+
+            <TextView
+                android:text="Website :"
+                android:textStyle="bold"
+                android:textColor="#F1C40F"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:backgroundTint="#F1C40F"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="textWebEditText"
+                android:textColor="#F1C40F"
+                android:id="@+id/website"/>
+
+            <TextView
+                android:text="Deskripsi :"
+                android:textStyle="bold"
+                android:textColor="#F1C40F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F1C40F"
+                android:id="@+id/deskripsi"
+                android:editable="false"
+                android:enabled="false"
+                android:textColor="#F1C40F"
+                android:inputType="textMultiLine"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go Routes"
+                android:textColor="#FFF"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnRoutes"
+                android:background="@drawable/btn_rounded_blue"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/menu_background"
+    tools:context="com.example.terminator.skripsi.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="SIG STUDIO FOTO DI BANDAR LAMPUNG"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/siger_lampung"
+        android:layout_height="100dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#FCE000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_white"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/linearPeta"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/googlemaps"
+                android:layout_marginTop="5dp"
+                android:id="@+id/imgBtnLihatPeta"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Peta"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textColor="#fc0c0c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_rounded_white"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:id="@+id/linearListPoto"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/camera"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/camera_menu_" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Studio Foto"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="#fc0c0c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_rounded_white"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:id="@+id/linearTentang"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/btnTentang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textColor="#fc0c0c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_rounded_white"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:id="@+id/linearKeluar"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_exit"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/btnExit"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:layout_marginTop="-5dp"
+                android:textStyle="bold"
+                android:textColor="#fc0c0c"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
