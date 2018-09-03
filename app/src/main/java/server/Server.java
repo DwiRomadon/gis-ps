@@ -8,7 +8,7 @@ public class Server {
 
     //public static final String baseURL = "https://emailtrkno.000webhostapp.com/";
 
-    public static final String baseURL  = "http://10.120.87.65/gis_teknokrat/";
+    public static final String baseURL  = "http://192.168.43.68/gis_teknokrat/";
 
     public static final String serverMarker = baseURL+"api_ps/markers.php";
     public static final String server = baseURL+"api_ps/include/";
